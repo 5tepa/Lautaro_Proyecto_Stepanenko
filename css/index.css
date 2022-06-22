@@ -1,0 +1,443 @@
+:root{
+    /*Colors*/
+  --primary:#CCEE94;
+  --secondary:#000000;
+    /*Spacings*/
+   
+    /*Font-Family*/
+
+    /*Font-Sizes*/
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+    /*Header*/
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0rem;
+    align-items: center;
+}
+
+header nav .menu{
+    display: flex;
+    list-style-type: none;
+    font-size: 15px; 
+    font-weight: bold;
+    gap: 2rem;
+}
+
+header .header__imagen{
+    height: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: black;
+}
+
+.menu .menu__link{
+    font-size: 1.4em;
+    align-items: center;
+}
+
+.menu__link::after{
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color:#C4FF61;
+    display: block;
+    transition: all 300ms;
+}
+.menu__link:hover::after{
+     width: 100%;
+}
+
+    /*Fin Header*/
+
+    /*banner*/
+
+.banner__text{
+    margin-top: 60px; 
+    text-align: center;   
+
+}
+
+.banner__text h1{
+    font-size: 50px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Fin banner*/
+
+/*Main*/
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+/*Cards*/
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1 1 clamp(300px, 30%, 400px);
+    border: 2px solid;
+}
+
+.box__info{
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    gap: 1rem;
+}
+
+.box__title{
+    font-family: 'Montserrat';
+    color: black;
+    font-size: 2.4em;
+} 
+
+.box__text{
+   font-size: 1.4em;
+}
+/*Fin Cards*/
+
+/*Porque elegirnos*/
+.box2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1 1 clamp(300px, 30%, 400px);
+    margin-top: 60px;
+}
+
+.box2__info{
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    gap: 1rem;
+}
+
+.box2__title{
+    font-family: 'Montserrat';
+    color: black;
+    font-size: 40px;
+    margin-bottom: 40px;
+} 
+
+.box2__text{
+    font-size: 2.4em;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+/*Fin Porque elegirnos*/
+
+/*Caracteristicas*/
+
+.box3{
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-size: 1.4em;
+}
+
+.xob{
+    flex-direction: column;
+    gap: 2rem;
+    height: 600px;
+    width: 600px;
+}
+
+.box3__char{
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    border: 2px solid #C4FF61;
+    border-radius: 10px;
+    height: 360px;
+    width: 600px;
+    font-size: 1.4em;
+    margin-bottom: 2.4rem;
+    justify-content: center;
+}
+
+.box3__1__char{
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    gap: 1rem;
+    height: 360px;
+    width: 600px;
+    border: 2px solid #C4FF61;
+    border-radius: 10px;
+    margin-bottom: 2.4rem;
+    font-size: 1.4em;
+}
+
+.box3__2__char{
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    gap: 1rem;
+    height: 360px;
+    width: 600px;
+    border: 2px solid #C4FF61;
+    border-radius: 10px;
+    margin-bottom: 2.4rem;
+    font-size: 1.4em;
+}
+
+.box3__3__char{
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    gap: 1rem;
+    height: 360px;
+    width: 600px;
+    border: 2px solid #C4FF61;
+    border-radius: 10px;
+    margin-bottom: 2.4rem;
+    font-size: 1.4em;
+}
+
+.box3__img{
+    width: 60px;
+    height: 60px;
+    margin: 2rem;
+}
+
+.box3__text{
+    padding: 1rem;
+}
+/*Fin Caracteristicas*/
+
+/*Footer*/
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(../images/FacebookBlanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin:1rem;
+}
+
+.social-icon:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url(../images/InstagramBlanco.png);
+}
+.social-icon:nth-of-type(3){
+    background-image: url(../images/LinkedinBlanco.png);
+}
+.social-icon:nth-of-type(4){
+    background-image: url(../images/TwitterBlanco.png);
+}
+
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}
+/*Fin Footer*/
+
+/*Nosotros*/
+.nosotros{
+    display: flex;
+    justify-content: center;
+}
+
+.nosotros__title{
+    font-family: 'Montserrat';
+    color: black;
+    font-size: 4.5em;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.nosotros__text{
+    font-size: 2em;
+    gap: 2rem;
+    margin:2rem;
+}
+.nosotros__video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    margin: 2rem;
+}
+/*Fin Nosotros*/
+
+/*servicio*/
+.servicio{
+    display: flex;
+    justify-content: center;
+    margin: 2.4rem;
+}
+
+.servicio__img{
+    background-size:contain ;
+    width: 50%;
+    border: 2px solid;
+}
+/*Fin servicio*/
+
+/*Contacto*/
+.container__form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+    margin-bottom: 5rem;
+}
+.container__form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.container__form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container__form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container__form a i{
+    color: #C4FF61;
+    margin-right: 10px;
+}
+.container__form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.container__form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container__form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #C4FF61;
+    color:black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container__form .btn-enviar:hover{
+    background: #C4FF61;
+}
+
+
+
+@media screen and (max-width:700px) {
+    header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
