@@ -21,6 +21,11 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+#grilla{
+    display: grid;
+    gap: 1rem;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -32,6 +37,7 @@ header{
     justify-content: space-around;
     padding: 2rem 0rem;
     align-items: center;
+    border-bottom: #000000 2px solid;
 }
 
 header nav .menu{
@@ -439,5 +445,20 @@ footer{
         gap: 2rem;
     }
 }
+
+@media screen and (max-width:700px) {
+    #grilla {
+    grid-template:
+    "header header" 100px
+    "banner__text banner__text" auto
+    "container container" auto
+    "footer footer" 100px
+    ;
+    }
+}
+
+
+    
+
 
 
